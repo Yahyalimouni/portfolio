@@ -10,12 +10,23 @@ import { FaFlask } from "react-icons/fa";
 import { FaDigitalOcean } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiGithubactions } from "react-icons/si";
+import { IoLogoFigma } from "react-icons/io5";
 import { Links } from '../data/Links'
 
 
 const Projects: React.FC = () => {
     const images = [PicraftHome, PicraftTools, PicraftExample];
-    const icons = [IoLogoJavascript, RiTailwindCssFill, FaLaravel, FaFlask, FaPython, FaDigitalOcean, SiGithubactions];
+    const techs = [
+    { icon: IoLogoFigma, label: "Figma" },
+    { icon: IoLogoJavascript, label: "JavaScript" },
+    { icon: RiTailwindCssFill, label: "TailwindCSS" },
+    { icon: FaLaravel, label: "Laravel" },
+    { icon: FaFlask, label: "Flask" },
+    { icon: FaPython, label: "Python" },
+    { icon: FaDigitalOcean, label: "DigitalOcean" },
+    { icon: SiGithubactions, label: "GitHub Actions" },
+    ];
+
     return(
         <section 
           id="projects" 
@@ -27,12 +38,12 @@ const Projects: React.FC = () => {
 
             <div>
                 <ProjectCard 
-                title="Image Manager"
-                description="An easy to use image procesor for compressing, resizing and converting images types."
-                images={images}
-                techIcons={icons}
-                githubLink={Links['github']}
-                liveLink={Links['picraft']}
+                    title="Image Manager"
+                    description="An easy to use image procesor for compressing, resizing and converting images types."
+                    images={images}
+                    techs={techs}
+                    githubLink={Links['github']}
+                    liveLink={Links['picraft']}
                 />
             </div>
         </section>

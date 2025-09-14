@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Links } from '../data/Links'
 
 
 type Profile = {
@@ -15,13 +16,13 @@ const Profiles: React.FC = () => {
         {
             'id': 1,
             'name': 'LinkedIn',
-            'href': 'https://www.linkedin.com/in/yahya-limouni02',
+            'href': Links['linkedin'],
             'icon': FaLinkedinIn
         },
         {
             'id': 2,
             'name': 'GitHub',
-            'href': 'https://www.github.com/Yahyalimouni',
+            'href': Links['github'],
             'icon': FaGithub 
         }
     ]

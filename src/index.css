@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+
 @theme {
     /* Font sizes */
     --text-c-xxs: 0.25rem;
@@ -98,6 +99,7 @@
 body {
     @apply w-dvw min-h-screen bg-pr-xspd overflow-x -hidden box-border;
 }
+
 
 @layer utilities {
     .glow-bull {
