@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import Profiles from './components/sections/Profiles'
 import About from './components/sections/About'
+import Projects from './components/sections/Projects'
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         {/* Hero Section */}
         <Hero/>
         <Profiles/>
-        {/* <div className='w-full h-1 bg-gradient- rounded-full'></div> */}
         <About/>
+        <Projects/>
+
       </main>
     </>
   )

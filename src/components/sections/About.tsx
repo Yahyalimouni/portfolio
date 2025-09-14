@@ -1,9 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
-import AboutImage from "../../assets/yahya_right.png";
 import "../../index.css";
+import AboutImage from "../../assets/yahya_right.png";
 import GlowButton from "../ui/GlowButton";
 import { GoArrowRight } from "react-icons/go";
+import { motion } from "framer-motion";
+
 
 const About: React.FC = () => {
   return (
