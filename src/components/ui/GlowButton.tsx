@@ -24,7 +24,7 @@ function GlowButton({ children, onClick, className='', href }: GlowButtonProps) 
                       hover:text-pr
                       bg-pr-spd 
                       px-4 py-2 ${roundedClass}
-                      md:flex items-center justify-center
+                      flex items-center justify-center
                       transition duration-500
                       group 
                       ${className || ''}`}>

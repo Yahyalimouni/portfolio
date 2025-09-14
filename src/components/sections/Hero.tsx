@@ -13,8 +13,9 @@ const Hero: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl w-full">
             
             {/* Left Column: Text */}
-            <div className="space-y-6">
-              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-snug 
+            <div className="space-y-6 flex flex-col items-center md:items-start">
+              {/* Big Title */}
+              <h1 className="text-center md:text-start text-3xl md:text-5xl font-extrabold tracking-tight leading-snug 
                              text-transparent bg-clip-text bg-gradient-to-r from-pr via-pr-l via-an-blue to-pr-d 
                              animate-left-fade-in">
                 Fueled by caffeine, <br /> I turn{' '} 
@@ -33,10 +34,12 @@ const Hero: React.FC = () => {
                 into web magic.
               </h1>
 
-              <p className="text-lg text-gray-400 max-w-xl animate-left-fade-in">
+              {/* Small text */}
+              <p className="text-center md:text-start text-lg text-gray-400 max-w-xl animate-left-fade-in">
                 I’m Yahya Limouni — a FullStack Developer who transforms coffee into modern, scalable, and user-friendly web solutions.
               </p>
 
+              {/* Buttons */}
               <div className="flex flex-row align-center gap-10
                               animate-bottom-fade-in">
                 <a href="/#contact" className="bg-gradient-to-r from-pr-smd to-pr-d 

@@ -9,14 +9,15 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="min-h-100 py-10 px-4 md:px-16 grid grid-cols-3 gap-4"
+      aria-label="About Yahya Limouni Abilities"
+      className="md:min-h-100 py-10 px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-4"
     >
       {/* ------------------ Image ------------------ */}
       <motion.div
-        className="relative"
+        className="relative hidden md:block"
         initial={{ opacity: 0, x: -120 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <img
@@ -31,16 +32,18 @@ const About: React.FC = () => {
         {/* Square */}
         <motion.div
           className="absolute -z-5 top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2
-                     w-1/2 aspect-square border-pr/50 border-solid border-10 rotate-z-45 blur-xs"
-          initial={{ opacity: 0, scale: 0.8 }}
+                     w-1/2 aspect-square border-pr/50 border-solid border-10 blur-xs"
+          animate={{rotateZ:0}}
+          initial={{ opacity: 0, scale: 0.8, rotateZ:70 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, delay: 0.3 }}
         />
         <motion.div
           className="absolute -z-5 top-1/2 left-0 -translate-y-1/2
-                     w-100 aspect-square border-an-blue/50 border-solid border-10 rotate-z-55 blur-xs"
-          initial={{ opacity: 0, scale: 0.8 }}
+                     w-100 aspect-square border-an-blue/50 border-solid border-10 blur-xs"
+          initial={{ opacity: 0, scale: 0.8, rotateZ:70 }}
+          animate={{rotateZ: 0}}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, delay: 0.6 }}
@@ -55,8 +58,10 @@ const About: React.FC = () => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
+        {/* Section Title */}
         <h1 className="text-2xl font-bold text-gray-400/60">About Me</h1>
 
+        {/* Name */}
         <h2 className="text-4xl font-extrabold text-gray-400 tracking-widest leading-snug">
           Yahya{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-an-purple to-pr">
@@ -64,18 +69,20 @@ const About: React.FC = () => {
           </span>
         </h2>
 
-        <p className="trucking-wide text-gray-400 text-xl">
+        {/* About Text */}
+        <p className="trucking-wide text-gray-400 text-xl text-justify">
           Hi, I’m Yahya, a developer fueled by coffee and curiosity, turning
           caffeine into clean, efficient code. I build with React, Laravel,
           TypeScript, and TailwindCSS, keeping security tighter than my
           deadlines (yes, I live by the OWASP Top 10). I treat code like a
           puzzle: elegant, satisfying, and occasionally mind-bending in a good
           way. Fluent in Arabic, Spanish, and English, with a good level of
-          French, I can debug both code and conversations—always with a dash of
+          French, I can debug both code and conversations always with a dash of
           humor, because even bugs deserve a smile.
         </p>
 
-        <div className="flex items-center gap-10 w-full mt-8">
+        {/* Buttons */}
+        <div className="flex items-center justify-center md:justify-start gap-20 md:gap-10 w-full mt-8">
           <GlowButton
             children="Get In Touch"
             href="/contact"
