@@ -1,0 +1,100 @@
+import React from "react";
+import { motion } from "framer-motion";
+import AboutImage from "../../assets/yahya_right.png";
+import "../../index.css";
+import GlowButton from "../ui/GlowButton";
+import { GoArrowRight } from "react-icons/go";
+
+const About: React.FC = () => {
+  return (
+    <section
+      id="about"
+      className="min-h-100 py-10 px-4 md:px-16 grid grid-cols-3 gap-4"
+    >
+      {/* ------------------ Image ------------------ */}
+      <motion.div
+        className="relative"
+        initial={{ opacity: 0, x: -120 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <img
+          src={AboutImage}
+          alt="Yahya Limouni Portrait"
+          className="col-span-1 w-64 md:w-100 h-auto drop-shadow-2xl rounded-full brightness-70"
+        />
+
+        {/* Shadow */}
+        <div className="absolute z-15 top-0 w-1/2 h-full bg-gradient-to-br from-pr/75 via-transparent rounded-full blur-3xl"></div>
+
+        {/* Square */}
+        <motion.div
+          className="absolute -z-5 top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2
+                     w-1/2 aspect-square border-pr/50 border-solid border-10 rotate-z-45 blur-xs"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1.2, delay: 0.3 }}
+        />
+        <motion.div
+          className="absolute -z-5 top-1/2 left-0 -translate-y-1/2
+                     w-100 aspect-square border-an-blue/50 border-solid border-10 rotate-z-55 blur-xs"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1.2, delay: 0.6 }}
+        />
+      </motion.div>
+
+      {/* ------------------ Content ------------------ */}
+      <motion.div
+        className="col-span-2 flex flex-col gap-4 justify-center relative"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <h1 className="text-2xl font-bold text-gray-400/60">About Me</h1>
+
+        <h2 className="text-4xl font-extrabold text-gray-400 tracking-widest leading-snug">
+          Yahya{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-an-purple to-pr">
+            LIMOUNI
+          </span>
+        </h2>
+
+        <p className="trucking-wide text-gray-400 text-xl">
+          Hi, I’m Yahya, a developer fueled by coffee and curiosity, turning
+          caffeine into clean, efficient code. I build with React, Laravel,
+          TypeScript, and TailwindCSS, keeping security tighter than my
+          deadlines (yes, I live by the OWASP Top 10). I treat code like a
+          puzzle: elegant, satisfying, and occasionally mind-bending in a good
+          way. Fluent in Arabic, Spanish, and English, with a good level of
+          French, I can debug both code and conversations—always with a dash of
+          humor, because even bugs deserve a smile.
+        </p>
+
+        <div className="flex items-center gap-10 w-full mt-8">
+          <GlowButton
+            children="Get In Touch"
+            href="/contact"
+            className="px-10 py-3 rounded-md"
+          />
+
+          <a
+            href="/#skills"
+            className="text-pr/75 underline flex gap-2 hover:text-an-purple duration-300 ease-out"
+          >
+            See My Skills <GoArrowRight className="rotate-90 text-2xl" />
+          </a>
+        </div>
+
+        {/* Shadow */}
+        <div className="absolute z-15 -top-1/8 -right-1/5 h-100 md:w-80 opacity-30 bg-gradient-to-bl from-pr/50 to-an-pink/40 rounded-full blur-3xl"></div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default About;
