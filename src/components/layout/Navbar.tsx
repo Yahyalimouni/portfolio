@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
                         onClick={toggleMenu}/>
 
                 {/* Contact me button */}
-                <GlowButton children="Contact Me" href="/contact"/>
+                <GlowButton children="Contact Me" href="/contact" header={true} />
             </header>
 
             {isOpen && 

@@ -37,10 +37,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     return (
         <div className="relative 
-                      bg-pr-spd rounded-2xl shadow-lg overflow-hidden 
+                       rounded-2xl overflow-hidden 
                       flex flex-col gap-4 p-4 
-                      h-fit w-1/3
-                      group/card">
+                      backdrop-blur-xl
+                      h-fit
+                      group/card
+                      shadow-[0_0_20px_rgba(33,55,88,1)]
+                      animate-little-bounce
+                      hover:animate-none">
             {/* Light Effect */}
             <div className="absolute bottom-0 right-0
                         w-1/2 h-1/4
@@ -154,7 +158,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     )}
 
                     {/* Links */}
-                    <div className="flex gap-4 w-full">
+                    <div className="flex md:flex-row flex-col gap-4 w-full">
                     {/* Github Link */}
                     {githubLink && (
                         <a
@@ -167,7 +171,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                         px-4 py-2 
                                         bg-pr-l/50
                                         hover:bg-pr-l/70
-                                        font-medium
+                                        font-medium 
                                         rounded-lg transition duration-300 ease-in-out"
                         >
                             <FaGithub />{" "}

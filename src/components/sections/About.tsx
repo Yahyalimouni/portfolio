@@ -11,14 +11,14 @@ const About: React.FC = () => {
     <section
       id="about"
       aria-label="About Yahya Limouni Abilities"
-      className="md:min-h-100 py-10 px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-4"
+      className="md:min-h-screen py-10 px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-4 items-center"
     >
       {/* ------------------ Image ------------------ */}
       <motion.div
         className="relative hidden md:block"
         initial={{ opacity: 0, x: -120 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.8 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <img
@@ -71,7 +71,7 @@ const About: React.FC = () => {
         </h2>
 
         {/* About Text */}
-        <p className="trucking-wide text-gray-400 text-xl text-justify">
+        <p className="trucking-wide text-gray-400 text-xl">
           Hi, I’m Yahya, a developer fueled by coffee and curiosity, turning
           caffeine into clean, efficient code. I build with React, Laravel,
           TypeScript, and TailwindCSS, keeping security tighter than my
@@ -83,18 +83,19 @@ const About: React.FC = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex items-center justify-center md:justify-start gap-20 md:gap-10 w-full mt-8">
+        <div className="flex flex-col items-center justify-center w-full mt-8 gap-7 
+                        md:justify-start md:flex-row md:gap-10">
           <GlowButton
             children="Get In Touch"
             href="/contact"
-            className="px-10 py-3 rounded-md"
+            className="px-10 py-3 rounded-md w-full"
           />
 
           <a
             href="/#skills"
             className="text-pr/75 underline flex gap-2 hover:text-an-purple duration-300 ease-out"
           >
-            See My Skills <GoArrowRight className="rotate-90 text-2xl" />
+            See My Skills <GoArrowRight className="text-2xl" />
           </a>
         </div>
 

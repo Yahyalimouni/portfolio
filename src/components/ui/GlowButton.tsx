@@ -6,10 +6,11 @@ type GlowButtonProps = {
     onClick?: () => void,
     className?: string,
     href?: string
+    header?: boolean
 };
 
 
-function GlowButton({ children, onClick, className='', href }: GlowButtonProps) {
+function GlowButton({ children, onClick, className='', href, header=false }: GlowButtonProps) {
     const roundedMatch = className.match(/\brounded(?:-(?:sm|md|lg|xl|2xl|3xl|full|\[[^\]]+\]|[a-z0-9]+))?\b/);
     const roundedClass = roundedMatch ? roundedMatch[0] : "rounded-2xl";
 
@@ -24,9 +25,10 @@ function GlowButton({ children, onClick, className='', href }: GlowButtonProps) 
                       hover:text-pr
                       bg-pr-spd 
                       px-4 py-2 ${roundedClass}
-                      flex items-center justify-center
+                      ${header ? 'hidden' : ''} md:flex items-center justify-center
                       transition duration-500
                       group 
+                      md:w-fit
                       ${className || ''}`}>
 
             <div className={`absolute
