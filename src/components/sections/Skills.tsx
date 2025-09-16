@@ -53,7 +53,7 @@ const Skills: React.FC = () => {
                 Weapons of Code
         </motion.h1>
 
-        <motion.div className="w-full flex flex-col gap-8" variants={containerVariants}>
+        <div className="w-full flex flex-col gap-8">
             {Object.entries(stacks).map(([stackName, skills]) => (
                 <motion.div key={stackName} variants={stackVariants} className="flex flex-col gap-4">
                     <h2 className="text-3xl font-bold
@@ -70,7 +70,7 @@ const Skills: React.FC = () => {
                     </div>
                 </motion.div>
             ))}
-            </motion.div>
+            </div>
         </motion.section>
   );
 };
