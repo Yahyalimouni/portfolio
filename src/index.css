@@ -125,4 +125,13 @@ body {
     .animate-little-bounce { 
         animation: little-bounce 2s ease-out infinite;
     }
+
+    .input-grp {
+        @apply flex flex-col-reverse w-full gap-2;
+    }
+
+    .input-field {
+        @apply outline-none rounded-lg px-4 py-2 border border-pr bg-black z-0;
+    }
 }
+

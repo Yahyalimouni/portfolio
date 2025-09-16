@@ -26,7 +26,6 @@ const Skills: React.FC = () => {
         { name: 'Laravel', logo: FaLaravel },
         { name: 'Python', logo: FaPython },
         { name: 'Flask', logo: FaFlask },
-        { name: 'Selenium', logo: SiSelenium },
     ],
     'Database': [
         { name: 'SQL', logo: FaDatabase },
@@ -38,6 +37,9 @@ const Skills: React.FC = () => {
         { name: 'DigitalOcean', logo: FaDigitalOcean },
         { name: 'Git', logo: FaSquareGit },
     ],
+    'Web Scraping': [
+        { name: 'Selenium', logo: SiSelenium },
+    ],
   };
 
   return (
@@ -46,7 +48,7 @@ const Skills: React.FC = () => {
         className="min-h-screen w-full px-4 md:px-16 py-15 flex flex-col gap-10 items-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
         variants={containerVariants}
     >
         <motion.h1 className="md:text-4xl text-2xl font-bold text-gray-400/60" variants={titleVariants}>

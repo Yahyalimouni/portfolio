@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
         <motion.section 
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.5 }}
             variants={containerVariants}
 
             id="projects" 
