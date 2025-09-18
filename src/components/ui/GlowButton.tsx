@@ -25,10 +25,10 @@ function GlowButton({ children, onClick, className='', href, header=false }: Glo
                       hover:text-pr
                       bg-pr-spd 
                       px-4 py-2 ${roundedClass}
-                      ${header ? '!hidden' : 'w-full'} flex items-center justify-center
+                      ${header ? '!hidden' : 'w-full'} md:!flex  flex items-center justify-center
+                      md:w-fit
                       transition duration-500
                       group 
-                      md:w-fit
                       ${className || ''}`}>
 
             <div className={`absolute
