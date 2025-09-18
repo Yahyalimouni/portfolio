@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
         className="min-h-screen w-full px-4 md:px-16 py-15 flex flex-col gap-10 items-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={containerVariants}
     >
         <motion.h1 className="md:text-4xl text-2xl font-bold text-gray-400/60" variants={titleVariants}>

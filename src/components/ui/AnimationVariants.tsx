@@ -12,13 +12,13 @@ export const containerVariants = {
 
 export const titleVariants = {
           hidden: { opacity: 0, y: -30 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
       };
 
 
 export const cardVariants = {
         hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: easeOut } },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: easeOut } },
     };
 
 export const stackVariants = {
@@ -27,7 +27,7 @@ export const stackVariants = {
     opacity: 1, 
     y: 0, 
     transition: { 
-      duration: 0.5,
+      duration: 0.2,
       staggerChildren: 0.1,
       when: "beforeChildren"
     } 
