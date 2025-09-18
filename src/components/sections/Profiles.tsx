@@ -23,7 +23,7 @@ const Profiles: React.FC = () => {
             'id': 2,
             'name': 'GitHub',
             'href': Links['github']['profile'],
-            'icon': FaGithub 
+            'icon': FaGithub
         }
     ]
     return (
