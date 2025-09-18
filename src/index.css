@@ -113,11 +113,11 @@ body {
     /* Bounce animation */
     @keyframes little-bounce  {
         0%,100% {
-            opacity: 0.5;
+            opacity: 0.7;
             transform: translateY(0);
         }
         50% {
-            opacity: 0.9;
+            opacity: 1;
             transform: translateY(2px);
         }
     }
