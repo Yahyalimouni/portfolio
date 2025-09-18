@@ -11,7 +11,7 @@ const SkillCard: React.FC<SkillCardProps> = ({name, logo:Logo, className}) => {
     return (
         <div
             className="flex flex-col items-center gap-2 
-                       p-4 min-w-fit md:w-40
+                       p-4 min-w-fit md:w-40 w-full
                        bg-pr-d/40
                        rounded-2xl shadow-[0_0_10px_rgba(22,33,88,1)]"
         >
