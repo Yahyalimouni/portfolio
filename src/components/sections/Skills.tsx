@@ -63,9 +63,9 @@ const Skills: React.FC = () => {
                                     text-transparent bg-clip-text
                                    bg-gradient-to-r from-blue-600 to-purple-900
                                    ">{stackName}</h2>
-                    <div className="flex flex-wrap gap-5">
+                    <div className="flex flex-wrap gap-2 md:gap-5">
                     {skills.map(skill => (
-                        <motion.div key={skill.name} variants={cardVariants} className="w-fit">
+                        <motion.div key={skill.name} variants={cardVariants} className="w-[calc(50%-10px)] md:w-fit">
                             <SkillCard name={skill.name} logo={skill.logo} className="text-pr" />
                         </motion.div>
                     ))}
