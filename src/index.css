@@ -133,5 +133,9 @@ body {
     .input-field {
         @apply outline-none rounded-lg px-4 py-2 border border-pr bg-black z-0;
     }
+
+    .label {
+        @apply block text-gray-400;
+    }
 }
 
