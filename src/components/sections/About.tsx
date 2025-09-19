@@ -65,7 +65,7 @@ const About: React.FC = () => {
         {/* Name */}
         <h2 className="text-4xl font-extrabold text-gray-400 tracking-widest leading-snug">
           Yahya{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-an-purple to-pr">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-800 to-orange-200">
             LIMOUNI
           </span>
         </h2>
