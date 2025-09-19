@@ -159,6 +159,7 @@ const Contact: React.FC = () => {
                                     className="input-field"
                                     maxLength={30}
                                     required
+                                    placeholder={field === "firstName" ? "Your first name" : "Your last name"}
                                     value={formData[field as keyof typeof formData]}
                                     onChange={(e) => handleChange(field as keyof typeof formData, e.target.value)}
                                 />
@@ -195,6 +196,7 @@ const Contact: React.FC = () => {
                             className="input-field"
                             maxLength={80}
                             required
+                            placeholder="The subject..."
                             value={formData.subject}
                             onChange={(e) => handleChange("subject", e.target.value)}
                         />

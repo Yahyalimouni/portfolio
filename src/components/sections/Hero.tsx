@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                                                 px-10 py-2.5
                                                 rounded-md
                                                 shadow-[0px_0px_4px_rgba(9,176,236,0.5)]">Hire me</a>
-                <a href="/public/yahya_curriculum.pdf" 
+                <a href="/yahya_cv_esp.pdf"
                    download="Yahya_Limouni_CV.pdf"
                    className="flex items-center justify-center gap-3
                               font-medium text-pr
