@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
                                     font-medium text-pr-sml
                                     *:w-full *:py-4 *:text-center`}>
                         {navItems.map(item => (
-                            <a href={item.href} key={item.id} id={`nav${item.id}`}>{item.name}</a>
+                            <a href={item.href} key={item.id} onClick={toggleMenu} id={`nav${item.id}`}>{item.name}</a>
                         ))}
                         <a href="/#contact" onClick={toggleMenu}>Contact Me</a>
                     </ul>
