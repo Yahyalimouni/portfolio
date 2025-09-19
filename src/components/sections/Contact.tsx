@@ -102,9 +102,9 @@ const Contact: React.FC = () => {
 
     return (
         <section
-            id="contact"
             className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center
-                        min-h-screen w-full px-4 md:px-16 py-15"
+                        min-h-screen w-full px-4 md:px-16 py-15
+                        pb-10 md:pb-5"
         >
             {/* Texts part */}
             <div className="z-10 flex flex-col gap-4">
@@ -143,6 +143,7 @@ const Contact: React.FC = () => {
 
             {/* Form */}
             <form
+                id="contact"
                 onSubmit={handleSubmit}
                 className="w-full md:p-10 p-4 rounded-2xl relative flex flex-col gap-8 bg-pr-xspd text-pr-l"
             >
