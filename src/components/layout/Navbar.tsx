@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
                         {navItems.map(item => (
                             <a href={item.href} key={item.id} id={`nav${item.id}`}>{item.name}</a>
                         ))}
-                        <a href="/#contact">Contact Me</a>
+                        <a href="/#contact" onClick={toggleMenu}>Contact Me</a>
                     </ul>
                 </div>
             }
