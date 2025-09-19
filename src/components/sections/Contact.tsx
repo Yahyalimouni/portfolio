@@ -144,7 +144,7 @@ const Contact: React.FC = () => {
             {/* Form */}
             <form
                 onSubmit={handleSubmit}
-                className="w-full p-10 rounded-2xl relative flex flex-col gap-8 bg-pr-xspd text-pr-l"
+                className="w-full md:p-10 p-4 rounded-2xl relative flex flex-col gap-8 bg-pr-xspd text-pr-l"
             >
                 <div className="absolute inset-2 rounded-[inherit] -z-1 blur-lg
                                 bg-gradient-to-br from-pr via-orange-600 to-purple-800"></div>
