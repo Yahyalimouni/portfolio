@@ -70,9 +70,9 @@ const Hero: React.FC = () => {
               <img
                 src={HeroImage}
                 alt="Yahya Limouni Portrait"
-                className="relative z-10 w-64 md:w-80 h-auto drop-shadow-2xl rounded-full animate-bottom-fade-in brightness-80"
+                className="relative z-10 w-64 md:w-80 h-auto drop-shadow-2xl rounded-full animate-bottom-fade-in"
               />
-              <div className="absolute top-0 bottom-0 right-10 md:w-[300px] rounded-full blur-3xl bg-black/50 z-20 "></div>
+              <div className="absolute top-0 bottom-0 right-10 md:w-[300px] rounded-full blur-3xl bg-black/30 z-20 "></div>
               <div className='absolute top-1/5 left-1/10 z-100 text-9xl text-pr font-extrabold animate-fade-in'>&lt;</div>
               <div className='absolute bottom-1/5 right-0 md:right-10 z-100 text-9xl text-pr font-extrabold animate-fade-in'>&gt;</div>
             </div>
