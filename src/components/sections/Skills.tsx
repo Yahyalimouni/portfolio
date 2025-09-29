@@ -51,7 +51,7 @@ const Skills: React.FC = () => {
         viewport={{ once: true, amount: 0.2 }}
         variants={containerVariants}
     >
-        <motion.h1 className="md:text-4xl text-2xl font-bold text-gray-400/60" variants={titleVariants}>
+        <motion.h1 className="md:text-4xl text-2xl font-bold text-gray-300" variants={titleVariants}>
                 Weapons of Code
         </motion.h1>
 
@@ -60,8 +60,7 @@ const Skills: React.FC = () => {
                 <motion.div key={stackName} variants={stackVariants} className="flex flex-col gap-4">
                     <h2 className="text-3xl font-bold
                                     w-fit
-                                    text-transparent bg-clip-text
-                                   bg-gradient-to-r from-blue-600 to-purple-900
+                                    text-gray-400
                                    ">{stackName}</h2>
                     <div className="flex flex-wrap gap-2 md:gap-5">
                     {skills.map(skill => (

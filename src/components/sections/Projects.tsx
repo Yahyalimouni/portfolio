@@ -67,10 +67,10 @@ const Projects: React.FC = () => {
             ></motion.div>
 
             <motion.h1 
-                className="md:text-4xl text-2xl font-bold text-gray-400/60"
+                className="md:text-4xl text-2xl font-bold text-gray-300"
                 variants={titleVariants}
             >
-                My Personal Projects
+                My Projects
             </motion.h1>
 
             <motion.div 

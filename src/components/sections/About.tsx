@@ -34,7 +34,7 @@ const About: React.FC = () => {
         <motion.div
           className="absolute -z-5 top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2
                      w-1/2 aspect-square border-pr/50 border-solid border-10 blur-xs"
-          animate={{rotateZ:0}}
+          animate={{rotateZ:45}}
           initial={{ opacity: 0, scale: 0.8, rotateZ:70 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -42,9 +42,9 @@ const About: React.FC = () => {
         />
         <motion.div
           className="absolute -z-5 top-1/2 left-0 -translate-y-1/2
-                     w-100 aspect-square border-an-blue/50 border-solid border-10 blur-xs"
-          initial={{ opacity: 0, scale: 0.8, rotateZ:70 }}
-          animate={{rotateZ: 0}}
+                     w-80 aspect-square border-an-blue/50 border-solid border-10 blur-xs"
+          initial={{ opacity: 0, scale: 0.8, rotateZ:0 }}
+          animate={{rotateZ: 45}}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, delay: 0.6 }}
@@ -60,12 +60,12 @@ const About: React.FC = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         {/* Section Title */}
-        <h1 className="text-2xl font-bold text-gray-400/60">About Me</h1>
+        <h1 className="text-2xl font-bold text-gray-300">About Me</h1>
 
         {/* Name */}
         <h2 className="text-4xl font-extrabold text-gray-400 tracking-widest leading-snug">
           Yahya{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-800 to-orange-200">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pr to-pr-spl">
             LIMOUNI
           </span>
         </h2>
