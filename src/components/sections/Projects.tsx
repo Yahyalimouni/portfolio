@@ -1,28 +1,35 @@
 import { motion } from 'framer-motion'
 import ProjectCard from '../ui/ProjectCard'
-import PicraftHome from '../../assets/picraft/picraft_home.jpeg'
-import PicraftTools from '../../assets/picraft/picraft_tools.jpeg'
-import PicraftExample from '../../assets/picraft/picraft_processed_img.jpeg'
-import BlogapiRouter from '../../assets/blogapi/router.png'
-import BlogapiCheckGuard from '../../assets/blogapi/checkguard.png'
+
 import { IoLogoJavascript } from "react-icons/io";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaDatabase } from "react-icons/fa";
-import { FaLaravel } from "react-icons/fa";
-import { FaFlask } from "react-icons/fa";
-import { FaDigitalOcean } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { SiGithubactions } from "react-icons/si";
 import { IoLogoFigma } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaDatabase, FaLaravel, FaFlask, FaDigitalOcean, FaReact, FaPython } from "react-icons/fa";
+import { SiGithubactions } from "react-icons/si";
 import { Links } from '../data/Links'
 import { containerVariants } from '../ui/AnimationVariants'
 import { titleVariants } from '../ui/AnimationVariants'
 import { cardVariants } from '../ui/AnimationVariants'
 
+/* --------------- Assets --------------  */
+// -Picraft
+import PicraftHome from '../../assets/picraft/picraft_home.jpeg'
+import PicraftTools from '../../assets/picraft/picraft_tools.jpeg'
+import PicraftExample from '../../assets/picraft/picraft_processed_img.jpeg'
+
+// -Blog API
+import BlogapiRouter from '../../assets/blogapi/router.png'
+import BlogapiCheckGuard from '../../assets/blogapi/checkguard.png'
+
+// -TriLink
+import TLHome from '../../assets/trilink/TriLinkHome.png'
+import TLManager from '../../assets/trilink/TriLinkManagerDashboard.png'
+import TLWaiter from '../../assets/trilink/TriLinkWaiterDashboard.png'
 
 const Projects: React.FC = () => {
     const imagesPicraft = [PicraftHome, PicraftTools, PicraftExample];
     const imagesBlogAPI = [BlogapiCheckGuard, BlogapiRouter]; 
+    const imagesTriLink = [TLHome, TLManager, TLWaiter];
 
     const picraftTechs = [
         { icon: IoLogoFigma, label: "Figma" },
@@ -38,6 +45,13 @@ const Projects: React.FC = () => {
     const blogAPITechs = [
         { icon: FaLaravel, label: "Laravel" },
         { icon: FaDatabase, label: "SQL" }
+    ]
+
+    const triLinkTechs = [
+        { icon: FaLaravel, label: "Laravel" },
+        { icon: FaReact, label: "React" },
+        { icon: RiTailwindCssFill, label: "TailwindCSS" },
+        { icon: FaDatabase, label: "SQL" },
     ]
 
     const lightVariants = {
@@ -101,6 +115,19 @@ const Projects: React.FC = () => {
                         images={imagesBlogAPI}
                         techs={blogAPITechs}
                         githubLink={Links['github']['blogapi']}
+                    />
+                </motion.div>
+
+                <motion.div 
+                    variants={cardVariants}
+                    className='w-full md:w-1/3'
+                >
+                    <ProjectCard 
+                        title="Order Management System"
+                        description="TriLink is a web application designed to streamline restaurant operations by connecting managers, waiters, and kitchen staff in real-time. Managers can control menus, create staff accounts, and assign stock permissions; waiters can take orders and manage drink stock; chefs can update food stock and track prepared items. TriLink ensures efficient communication, accurate stock management, and smooth workflow across all roles, showcasing a clean, modern full-stack implementation."
+                        images={imagesTriLink}
+                        techs={triLinkTechs}
+                        done={false}
                     />
                 </motion.div>
             </motion.div>

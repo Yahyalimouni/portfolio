@@ -15,6 +15,7 @@ type ProjectCardProps = {
   githubLink?: string;
   liveLink?: string;
   techs?: Tech[];
+  done?: boolean
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -24,6 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     githubLink,
     liveLink,
     techs = [],
+    done=true
 }) => {
     const charLimit = 95;
     const [expanded, setExpanded] = useState(false);
@@ -159,45 +161,51 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
                     {/* Links */}
                     <div className="flex md:flex-row flex-col gap-4 w-full">
-                    {/* Github Link */}
-                    {githubLink && (
-                        <a
-                            href={githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`Github source code of the ${title} project`}
-                            className="flex items-center justify-center gap-2
-                                        w-full  
-                                        px-4 py-2 
-                                        bg-pr-l/50
-                                        hover:bg-pr-l/70
-                                        font-medium 
-                                        rounded-lg transition duration-300 ease-in-out"
-                        >
-                            <FaGithub />{" "}
-                            Source Code
-                        </a>
-                    )}
+                    {done ? (
+                        <>
+                            {/* Github Link */}
+                            {githubLink && (
+                                <a
+                                    href={githubLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={`Github source code of the ${title} project`}
+                                    className="flex items-center justify-center gap-2
+                                            w-full  
+                                            px-4 py-2 
+                                            bg-pr-l
+                                            hover:bg-pr-l/70
+                                            font-medium 
+                                            rounded-lg transition duration-300 ease-in-out"
+                                >
+                                    <FaGithub /> Source Code
+                                </a>
+                            )}
 
-                    {/* Github Link */}
-                    {liveLink && (
-                        <a
-                        href={liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Live demo of the ${title} project`}
-                        className="flex items-center justify-center gap-2
-                                    w-full 
-                                    px-4 py-2 
-                                    bg-pr-sml 
-                                    hover:opacity-50 transition duration-300 ease-in-out
-                                    rounded-lg
-                                    text-pr-spd font-bold"
-                        >
-                        <FaExternalLinkAlt />{" "}
-                        Live Demo
-                        </a>
-                    )}
+                            {/* Live Demo Link */}
+                            {liveLink && (
+                                <a
+                                    href={liveLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={`Live demo of the ${title} project`}
+                                    className="flex items-center justify-center gap-2
+                                            w-full 
+                                            px-4 py-2 
+                                            bg-pr-sml 
+                                            hover:opacity-50 transition duration-300 ease-in-out
+                                            rounded-lg
+                                            text-pr-spd font-bold"
+                                >
+                                    <FaExternalLinkAlt /> Live Demo
+                                </a>
+                            )}
+                        </>
+                        ) : (
+                        <div className="w-full px-4 py-2 bg-pr/40 text-pr-l/75 text-center rounded-lg font-medium">
+                            Project in progress...
+                        </div>
+                        )}
                     </div>
                 </div>
         </div>
