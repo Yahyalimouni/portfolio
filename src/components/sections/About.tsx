@@ -72,14 +72,13 @@ const About: React.FC = () => {
 
         {/* About Text */}
         <p className="trucking-wide text-gray-400 text-xl">
-          Hi, I’m Yahya, a developer fueled by coffee and curiosity, turning
-          caffeine into clean, efficient code. I build with React, Laravel,
-          TypeScript, and TailwindCSS, keeping security tighter than my
-          deadlines (yes, I live by the OWASP Top 10). I treat code like a
-          puzzle: elegant, satisfying, and occasionally mind-bending in a good
-          way. Fluent in Arabic, Spanish, and English, with a good level of
-          French, I can debug both code and conversations always with a dash of
-          humor, because even bugs deserve a smile.
+          Hi, I’m Yahya — a dedicated web developer passionate about building secure, scalable, and user-friendly applications.
+          I work with React, Laravel, TypeScript, and TailwindCSS, always prioritizing clean, efficient, and maintainable code. Security is at the core of my development process, following best practices such as the OWASP Top 10.
+          I approach coding as solving complex puzzles: every challenge is an opportunity to design elegant and effective solutions.
+
+          <br /> <br />
+
+          Fluent in Arabic, Spanish, and English, with a strong level of French, I bring not only technical expertise but also cross-cultural communication skills to every project.
         </p>
 
         {/* Buttons */}

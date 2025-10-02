@@ -46,8 +46,10 @@ const Hero: React.FC = () => {
                                                 hover:opacity-50 duration-300
                                                 font-bold text-pr-spd/75
                                                 px-10 py-2.5
+                                                text-lg
                                                 rounded-md
-                                                shadow-[0px_0px_4px_rgba(9,176,236,0.5)]">Hire me</a>
+                                                shadow-[0px_0px_4px_rgba(9,176,236,0.5)]
+                                                tracking-wider">Hire me</a>
                 <a href="/yahya_cv.pdf"
                    download="Yahya_Limouni_CV.pdf"
                    className="flex items-center justify-center gap-3
