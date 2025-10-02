@@ -234,7 +234,8 @@ const Contact: React.FC = () => {
                     <button
                         type="submit"
                         className="w-full rounded-lg p-3 bg-pr hover:bg-pr/75 duration-300 ease-out
-                                    font-bold text-xl text-pr-spd cursor-pointer"
+                                    font-bold text-xl text-pr-spd cursor-pointer
+                                    !tracking-widest"
                     >
                         Send
                     </button>

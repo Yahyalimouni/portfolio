@@ -88,12 +88,12 @@ const About: React.FC = () => {
           <GlowButton
             children="Get In Touch"
             href="/#contact"
-            className="px-10 py-3 rounded-md w-full"
+            className="px-10 py-3 rounded-md w-full !tracking-widest"
           />
 
           <a
             href="/#skills"
-            className="text-pr/75 flex gap-2 hover:text-an-purple duration-300 ease-out"
+            className="text-pr/75 flex gap-2 hover:text-an-purple duration-300 ease-out !tracking-wide"
           >
             See My Skills <GoArrowRight className="text-2xl" />
           </a>
