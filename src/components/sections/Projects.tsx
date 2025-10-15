@@ -145,7 +145,7 @@ const Projects: React.FC = () => {
 
                 <motion.div 
                     variants={cardVariants}
-                    className=''
+                    className='col-start-2 col-end-3'
                 >
                     <ProjectCard 
                         title="CafeteríaSol"
