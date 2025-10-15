@@ -7,4 +7,5 @@ export const Links = {
     },
     'linkedin': 'https://www.linkedin.com/in/yahya-limouni02',
     'picraft': 'https://www.picraft.it.com/',
+    'cafeteriasol': 'https://www.cafeteriasol.es/'
 }

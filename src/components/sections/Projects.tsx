@@ -100,12 +100,12 @@ const Projects: React.FC = () => {
             </motion.h1>
 
             <motion.div 
-                className="w-full flex md:flex-row flex-col justify-center gap-6"
+                className="w-full grid md:grid-cols-3 grid-cols-1 gap-2"
                 variants={containerVariants}
             >
                 <motion.div 
                     variants={cardVariants}
-                    className='w-full md:w-1/3'
+                    className=''
                 >
                     <ProjectCard 
                         title="Image Manager"
@@ -119,7 +119,7 @@ const Projects: React.FC = () => {
 
                 <motion.div 
                     variants={cardVariants}
-                    className='w-full md:w-1/3'
+                    className=''
                 >
                     <ProjectCard 
                         title="Blog API - Laravel"
@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
 
                 <motion.div 
                     variants={cardVariants}
-                    className='w-full md:w-1/3'
+                    className=''
                 >
                     <ProjectCard 
                         title="Order Management System"
@@ -145,14 +145,14 @@ const Projects: React.FC = () => {
 
                 <motion.div 
                     variants={cardVariants}
-                    className='w-full md:w-1/3'
+                    className=''
                 >
                     <ProjectCard 
                         title="CafeteríaSol"
                         description="CafeteríaSol es un sitio web moderno para una cafetería local, diseñado para mostrar el menú, productos destacados y promociones de manera atractiva. Incluye secciones de productos con imágenes de alta calidad, descripciones detalladas y precios, optimizado para dispositivos móviles y accesibilidad. El proyecto destaca por su diseño limpio, experiencia de usuario intuitiva y una implementación responsiva usando tecnologías actuales de frontend."
                         images={imagesCafeteriaSol}
                         techs={cafeteriaSolTechs}
-                        done={true}
+                        liveLink={ Links['cafeteriasol'] }
                     />
                 </motion.div>
             </motion.div>
