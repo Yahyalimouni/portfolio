@@ -26,10 +26,17 @@ import TLHome from '../../assets/trilink/TriLinkHome.png'
 import TLManager from '../../assets/trilink/TriLinkManagerDashboard.png'
 import TLWaiter from '../../assets/trilink/TriLinkWaiterDashboard.png'
 
+// -Cafeteria Sol
+import CSHero from '../../assets/cafeteriasol/hero.png'
+import CSFeatured from '../../assets/cafeteriasol/featured.png'
+import CSReservations from '../../assets/cafeteriasol/reservation.png'
+import CSMenu from '../../assets/cafeteriasol/menu.png'
+
 const Projects: React.FC = () => {
     const imagesPicraft = [PicraftHome, PicraftTools, PicraftExample];
     const imagesBlogAPI = [BlogapiCheckGuard, BlogapiRouter]; 
     const imagesTriLink = [TLHome, TLManager, TLWaiter];
+    const imagesCafeteriaSol = [CSHero, CSFeatured, CSMenu, CSReservations];
 
     const picraftTechs = [
         { icon: IoLogoFigma, label: "Figma" },
@@ -52,6 +59,11 @@ const Projects: React.FC = () => {
         { icon: FaReact, label: "React" },
         { icon: RiTailwindCssFill, label: "TailwindCSS" },
         { icon: FaDatabase, label: "SQL" },
+    ]
+    
+    const cafeteriaSolTechs = [
+        { icon: FaReact, label: "React" },
+        { icon: RiTailwindCssFill, label: "TailwindCSS" },
     ]
 
     const lightVariants = {
@@ -128,6 +140,19 @@ const Projects: React.FC = () => {
                         images={imagesTriLink}
                         techs={triLinkTechs}
                         done={false}
+                    />
+                </motion.div>
+
+                <motion.div 
+                    variants={cardVariants}
+                    className='w-full md:w-1/3'
+                >
+                    <ProjectCard 
+                        title="CafeteríaSol"
+                        description="CafeteríaSol es un sitio web moderno para una cafetería local, diseñado para mostrar el menú, productos destacados y promociones de manera atractiva. Incluye secciones de productos con imágenes de alta calidad, descripciones detalladas y precios, optimizado para dispositivos móviles y accesibilidad. El proyecto destaca por su diseño limpio, experiencia de usuario intuitiva y una implementación responsiva usando tecnologías actuales de frontend."
+                        images={imagesCafeteriaSol}
+                        techs={cafeteriaSolTechs}
+                        done={true}
                     />
                 </motion.div>
             </motion.div>
