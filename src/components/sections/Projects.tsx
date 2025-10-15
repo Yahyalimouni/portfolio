@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
             >
                 <motion.div 
                     variants={cardVariants}
-                    className=''
+                    className='w-full'
                 >
                     <ProjectCard 
                         title="Image Manager"
@@ -119,7 +119,7 @@ const Projects: React.FC = () => {
 
                 <motion.div 
                     variants={cardVariants}
-                    className=''
+                    className='w-full'
                 >
                     <ProjectCard 
                         title="Blog API - Laravel"
@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
 
                 <motion.div 
                     variants={cardVariants}
-                    className=''
+                    className='w-full'
                 >
                     <ProjectCard 
                         title="Order Management System"
@@ -145,7 +145,7 @@ const Projects: React.FC = () => {
 
                 <motion.div 
                     variants={cardVariants}
-                    className='col-start-2 col-end-3'
+                    className='md:col-start-2 md:col-end-3'
                 >
                     <ProjectCard 
                         title="CafeteríaSol"
