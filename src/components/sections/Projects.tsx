@@ -148,8 +148,8 @@ const Projects: React.FC = () => {
                     className='md:col-start-2 md:col-end-3'
                 >
                     <ProjectCard 
-                        title="CafeteríaSol"
-                        description="CafeteríaSol es un sitio web moderno para una cafetería local, diseñado para mostrar el menú, productos destacados y promociones de manera atractiva. Incluye secciones de productos con imágenes de alta calidad, descripciones detalladas y precios, optimizado para dispositivos móviles y accesibilidad. El proyecto destaca por su diseño limpio, experiencia de usuario intuitiva y una implementación responsiva usando tecnologías actuales de frontend."
+                        title="Bar Cafetería Sol"
+                        description="CafeteríaSol is a modern website for a local café, designed to showcase the menu, featured products, and promotions in an appealing way. It includes product sections with high-quality images, detailed descriptions, and prices, optimized for mobile devices and accessibility. The project stands out for its clean design, intuitive user experience, and responsive implementation using current frontend technologies."
                         images={imagesCafeteriaSol}
                         techs={cafeteriaSolTechs}
                         liveLink={ Links['cafeteriasol'] }
