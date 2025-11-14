@@ -52,7 +52,8 @@ const Hero: React.FC = () => {
                                                 tracking-wider">Hire me</a>
                 <a href="/yahya_cv.pdf"
                    download="Yahya_Limouni_CV.pdf"
-                   className="flex items-center justify-center gap-3
+                   className="!hidden
+                              items-center justify-center gap-3
                               font-medium text-pr
                               hover:opacity-50 duration-300">
                   <span>Download CV</span> <GoArrowRight className="text-2xl"/>
