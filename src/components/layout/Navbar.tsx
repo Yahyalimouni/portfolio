@@ -23,14 +23,14 @@ const Navbar: React.FC = () => {
             'href': '/#about'
         },
         {
-            'id': 4,
-            'name': 'Skills',
-            'href': '/#skills'
-        },
-        {
             'id': 3,
             'name': 'Projects',
             'href': '/#projects'
+        },
+        {
+            'id': 4,
+            'name': 'Skills',
+            'href': '/#skills'
         }
     ];
 
